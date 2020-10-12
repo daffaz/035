@@ -1,0 +1,17 @@
+body {
+    font-family: 'Playfair Display', serif;
+    overflow-x: hidden;
+}
+.judul {
+    position: relative;
+    display: block;
+}
+.judul::after {
+    content: "";
+    display: block;
+    width: 8%;
+    border-bottom: 1px solid white;
+    position: absolute;
+    left: 110px;
+    bottom: -0.5em;
+}
