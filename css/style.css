@@ -1,6 +1,14 @@
+p {
+    font-family: 'Crimson Text', serif;
+}
 body {
-    font-family: 'Playfair Display', serif;
     overflow-x: hidden;
+}
+.logo {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 1.3em;
+    letter-spacing: 5px;
 }
 .judul {
     position: relative;
@@ -14,4 +22,36 @@ body {
     position: absolute;
     left: 110px;
     bottom: -0.5em;
+}
+.konten-lima {
+    height: 100vh;
+    /* background-color: aqua; */
+}
+.menu-toggle {
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 3;
+}
+.menu-toggle input {
+    display: flex;
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #013e8d;
+    border-radius: 3px;
+    margin-bottom: 11px;
+    transition: all 0.5s;
 }
