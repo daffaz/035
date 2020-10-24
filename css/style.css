@@ -1,17 +1,37 @@
+@font-face { font-family: A1Mincho; src: url('../fonts/A-OTF-A1明朝Std-Bold.otf');}
+.japan {
+    font-family: A1Mincho;
+}
 p {
     font-family: 'Crimson Text', serif;
 }
 .project {
     font-family: 'Crimson Text', serif;
-    font-size: 4em;
+    font-size: 4.2em;
     color: #02377c;
     position: absolute;
-    top: 190px;
-    letter-spacing: 3px;
+    top: 171px;
+    letter-spacing: 4px;
     z-index: 2;
-    left: 67px;
+    left: 44px;
     font-weight: 500;
-
+}
+.work-story {
+    font-family: 'Crimson Text', serif;
+    font-size: 4.2em;
+    color: #02377c;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+.work-abu {
+    position: absolute;
+    z-index: -1;
+    background-color: gainsboro;
+    height: 300px;
+    width: 1010px;
+    margin: 0 11rem;
+    top: 10rem;
+    left: 10px;
 }
 body {
     overflow-x: hidden;
@@ -29,11 +49,27 @@ body {
 .judul::after {
     content: "";
     display: block;
-    width: 8%;
-    border-bottom: 1px solid white;
+    width: 15px;
+    border-bottom: 2px solid white;
     position: absolute;
-    left: 110px;
-    bottom: -0.5em;
+    left: 15px;
+    bottom: -15px;
+}
+.more {
+    position: relative;
+    display: block;
+}
+.more a {
+    color: #02377c;
+    text-decoration: none;
+}
+.more::after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #02377c;
+    width: 20px;
+    top: 130%;
+    left: 0;
 }
 .konten-lima {
     height: 100vh;
@@ -68,7 +104,7 @@ body {
     transition: all 0.5s;
 }
 .gambar {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../images/konten8.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../images/img_pesawat_project.jpg');
     z-index: 2;
     height: 26rem;
     width: 57rem;
@@ -82,3 +118,35 @@ body {
     position: absolute;
     top: 8rem
 }
+.box {
+    z-index: 2;
+    position: absolute;
+    top: 50px;
+    left: 670px;
+    background-color: #002554;
+    margin-bottom: .5rem;
+    text-align: center;
+    color: white;
+    padding: 1.3rem 2rem;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.box-wrapper {
+    width: 600px;
+    height: 80px;
+}
+.header-bg {
+    background-image:url('../images/bg_header_main.png'); 
+    height: 120vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0rem;
+}
+@media only screen and (max-device-width: 768px) {
+    .header-bg {
+      background-attachment: scroll;
+    }
+  }
